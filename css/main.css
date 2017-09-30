@@ -1,30 +1,23 @@
-    table {
-  width: 400px;
-  border-collapse: collapse;
+body {
+    width: 550px;
+    margin: auto;
+    background: #C3C3C3;
 }
-td {
-  width: 33.333%;
-  border: 6px solid #222;
+
+h1 {
+    border-bottom: 1px solid black;
+     font-family: "Acme";
 }
-td::after {
-  content: '';
-  display: block;
-  margin-top: 100%;
+
+.square {
+    height: 80px;
+    width: 80px;    
+    font-size: 45pt;
+    text-align: center;
+     font-family: "Play";
 }
-td {
-  border: 6px solid #222;
-}
-td:first-of-type {
-  border-left-color: transparent;
-  border-top-color: transparent;
-}
-td:nth-of-type(2) {
-  border-top-color: transparent;
-}
-td:nth-of-type(3) {
-  border-right-color: transparent;
-  border-top-color: transparent;
-}
-tr:nth-of-type(3) td {
-  border-bottom-color: transparent;
+
+#message {
+    font-size: 18pt;
+     font-family: "Indie Flower"; 
 }

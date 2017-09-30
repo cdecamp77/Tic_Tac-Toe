@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower|Play" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body onload="startGame();">
  
  <h1>My Tic-Tac-Toe Game</h1>  
+<div id="message">This is where the message will go</div>
 
-<div id:"game">
-    <table id="tttBoard">
-        <tr id="firRow">
-            <td id="01"></td>
-            <td id="02"></td>
-            <td id="03"></td>
+    <table border="1">
+        <tr>
+            <td class="square" onclick="nextMove(this)"></td>
+            <td class="square" onclick="nextMove(this)"></td>
+            <td class="square" onclick="nextMove(this)"></td>
         </tr>
-        <tr id="secRow">
-            <td id="11"></td>
-            <td id="12"></td>
-            <td id="13"></td>
+        <tr>
+            <td class="square" onclick="nextMove(this)"></td>
+            <td class="square" onclick="nextMove(this)"></td>
+            <td class="square" onclick="nextMove(this)"></td>
         </tr>
-        <tr id="thiRow">
-            <td id="21"></td>
-            <td id="22"></td>
-            <td id="23"></td>
+        <tr>
+            <td class="square" onclick="nextMove(this)"></td>
+            <td class="square" onclick="nextMove(this)"></td>
+            <td class="square" onclick="nextMove(this)"></td>
         </tr>
     </table>
-</div>
 
-<button id="playAgain">Play Again?</button>
 
 <script src="js/main.js"></script>
 </body>
