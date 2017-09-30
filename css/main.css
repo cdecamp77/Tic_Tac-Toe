@@ -1,17 +1,23 @@
 body {
-    width: 550px;
+    width: 600px;
     margin: auto;
     background: #D8E4FF;
 }
 
 table {
     background-color: #A4BAB7;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 130px;
 }
 
 h1 {
-    border-bottom: 1px solid #187795;
+    border-bottom: 5px solid #187795;
     font-family: "Acme";
     color: #187795;
+    text-align: center;
 }
 
 .square {
@@ -26,12 +32,16 @@ h1 {
 #message {
     font-size: 18pt;
      font-family: "Indie Flower"; 
-     color: #187795
+     color: #187795;
+     text-align: center;
 }
 
 #restart {
     font-size: 18pt;
     font-family: "Indie Flower"; 
     text-decoration: none;
-    color: #5B3000;
+    background-color: #5B3000;
+    position: relative;
+    left: 200px;
+    color: #F1F2EB;
 }

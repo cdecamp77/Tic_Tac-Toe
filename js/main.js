@@ -6,7 +6,7 @@ function startGame() {
 
     document.turn = "X";
     document.winner = null;
-    setMessage(document.turn + " , start things off.")
+    setMessage("Alright " + document.turn + ", start things off.")
 }
 
 function setMessage(msg) {
@@ -15,10 +15,10 @@ function setMessage(msg) {
 
 function nextMove(square) {
     if (document.winner != null) {
-        setMessage(document.turn = "You have already won!");
+        setMessage(document.turn = "Try hitting that button down there...");
     }else if (square.innerText == '') {
         square.innerText = document.turn;
-        switchTurn();       
+        switchTurn();  
     } else {
         setMessage("Square is already selected.")
     }
@@ -34,7 +34,7 @@ function switchTurn() {
     } else {
         document.turn = "X";
         setMessage('Your turn ' + document.turn);
-    }
+    } 
 }
 
 function checkWinner(move) {
@@ -48,7 +48,7 @@ function checkWinner(move) {
         checkRow(1,5,9, move) || 
         checkRow(3,5,7, move)) {
         result = true;
-    }
+    } 
     return result;
 }
 
